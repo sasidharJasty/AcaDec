@@ -1,0 +1,193 @@
+@import "tailwindcss";
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+}
+
+.dark body {
+  background: #1a1a1a;
+}
+
+/* Clean team photo section */
+.team-photo {
+  background: linear-gradient(180deg, #fafafa 0%, #f3f4f6 100%);
+  min-height: 60vh;
+  position: relative;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.team-photo-overlay {
+  background: linear-gradient(180deg, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.15) 100%);
+  position: absolute;
+  inset: 0;
+}
+
+/* Dark mode team photo */
+.dark .team-photo {
+  background: linear-gradient(180deg, #1a1a1a 0%, #374151 100%);
+  border-bottom: 1px solid #4b5563;
+}
+
+.dark .team-photo-overlay {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.05) 100%);
+}
+
+/* Clean card styles */
+.clean-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.clean-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.dark .clean-card {
+  background: #1f2937;
+  border: 1px solid #4b5563;
+}
+
+/* Clean button styles */
+.clean-btn {
+  background: black;
+  color: white;
+  border: 2px solid black;
+  transition: all 0.2s ease;
+}
+
+.clean-btn:hover {
+  background: white;
+  color: black;
+}
+
+.dark .clean-btn {
+  background: white;
+  color: black;
+  border: 2px solid white;
+}
+
+.dark .clean-btn:hover {
+  background: black;
+  color: white;
+}
+:root {
+  --lg-bg-color: rgba(255, 255, 255, 0.15);
+  --lg-highlight: rgba(255, 255, 255, 0.4);
+  --lg-grey: rgba(0, 0, 0, 0.6);
+  --lg-text: #000;
+  --lg-red: #ff3b30; /* Apple accent red */
+}
+
+.dark {
+  --lg-bg-color: rgba(0, 0, 0, 0.25);
+  --lg-highlight: rgba(255, 255, 255, 0.2);
+  --lg-grey: rgba(255, 255, 255, 0.6);
+  --lg-text: #fff;
+}
+
+.glass-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border-radius: 2rem;
+  overflow: hidden;
+  flex: 1 1 auto;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+  color: var(--lg-text);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 2.2);
+}
+
+
+
+.glass-filter,
+.glass-overlay,
+.glass-specular {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.glass-filter {
+  z-index: 0;
+  backdrop-filter: blur(4px);
+  filter: url(#lensFilter) saturate(120%) brightness(1.15);
+}
+
+.glass-overlay {
+  z-index: 1;
+  background: var(--lg-bg-color);
+}
+
+.glass-specular {
+  z-index: 2;
+  box-shadow: inset 1px 1px 0 var(--lg-highlight),
+    inset 0 0 5px var(--lg-highlight);
+}
+
+.glass-content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: space-around;
+  padding: 12px 28px;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Link / Nav items */
+.glass-content__link {
+  margin-bottom: -1px;
+  margin-top: 6px;
+  transition: transform 0.2s ease-out;
+}
+.glass-content__link img {
+  width: 78px;
+}
+.glass-content__link:hover { transform: scale(1.1); }
+.glass-content__link:active { transform: scale(0.95); }
+
+
+
+/* Icon items */
+.glass-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--lg-grey);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.glass-item svg {
+  fill: var(--lg-grey);
+  height: 50px;
+  margin-bottom: 0.25rem;
+  filter: drop-shadow(0 0 3px rgba(255 255 255 / 0.25));
+  transition: transform 0.25s ease-out;
+}
+.glass-item:hover svg { transform: scale(1.1); }
+.glass-item:active svg { transform: scale(0.95); }
+
+/* Active state */
+.glass-item--active {
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--lg-red);
+  margin: -8px -40px;
+  padding: 0.5rem 2.5rem;
+  border-radius: 3rem;
+}
+.glass-item--active svg { fill: var(--lg-red); }
+
+.header-text {
+  mix-blend-mode: difference;
+  -webkit-mix-blend-mode: difference;
+}
