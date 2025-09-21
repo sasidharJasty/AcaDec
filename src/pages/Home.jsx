@@ -20,7 +20,7 @@ const Home = () => {
     <div className="min-h-screen bg-gray-50 dark:bg-neutral-900">
        <motion.div
 
-               className="hidden lg:flex fixed bottom-8 right-4  z-20 flex-col items-start"
+               className="fixed bottom-8 right-4  z-20 flex-col items-start"
              >
                <div className="clean-card flex items-center gap-2 px-4 py-2 rounded-xl shadow-md bg-white dark:bg-neutral-800 border border-gray-200 dark:border-gray-700">
                  
