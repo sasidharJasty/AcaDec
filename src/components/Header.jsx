@@ -121,7 +121,7 @@ const Header = () => {
             animate={{ opacity: 1, scaleY: 1 }}
             exit={{ opacity: 0, scaleY: 0.8 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className="glass-container glass-container--rounded glass-container--small mt-2 origin-top"
+            className="glass-container glass-container--rounded glass-container--small mt-2 origin-top dark:!bg-black/20"
           >
             <div className="glass-filter"></div>
             <div className="glass-overlay"></div>
