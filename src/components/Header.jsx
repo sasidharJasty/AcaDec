@@ -126,7 +126,7 @@ const Header = () => {
             <div className="glass-filter"></div>
             <div className="glass-overlay"></div>
             <div className="glass-specular"></div>
-            <div className="glass-content flex-col items-start gap-2 header-text">
+            <div className="glass-content flex-col items-start gap-2 text-black dark:text-white ">
               {navLinks.map((item) => (
                 <motion.div
                   key={item.to}
