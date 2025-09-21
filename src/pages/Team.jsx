@@ -129,10 +129,10 @@ const Team = () => {
           
           <div className="flex justify-center mb-12 !h-fit">
             <div className="clean-card rounded-2xl p-4 max-w-8xl !h-fit">
-              <div className="w-full  bg-gray-200 dark:bg-neutral-700 rounded-xl flex items-center justify-center mb-4 !h-fit">
+              <div className="w-full  bg-gray-200 dark:bg-neutral-700 rounded-xl flex items-center justify-center mb-4 ">
                 <div className="text-center text-gray-500 dark:text-gray-400">
                  
-                  <img src="/Picture1.jpg" alt="Team Photo" className="mx-auto !h-fit" />
+                  <img src="/Picture1.jpg" alt="Team Photo" className="mx-auto h-fit" />
                 </div>
               </div>
             </div>
