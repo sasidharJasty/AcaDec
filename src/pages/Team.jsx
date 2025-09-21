@@ -115,7 +115,7 @@ const Team = () => {
       </motion.div>
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold text-black dark:text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold text-black dark:text-white my-6 ">
             Meet Our Team
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
