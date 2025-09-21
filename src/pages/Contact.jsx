@@ -70,8 +70,8 @@ const Contact = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-xl font-bold text-black  mb-2">Faculty Advisor</h3>
-                  <p className="text-lg font-semibold text-gray-700 mb-1">Mrs. Beatriz Andrade</p>
-                  <p className="text-gray-600 mb-4">English Department</p>
+                  <p className="text-lg font-semibold text-gray-700 mb-1">Mrs. Belle Andrade</p>
+                  <p className="text-gray-600 mb-4">Math Department</p>
                   <div className="space-y-2">
                     <a 
                       href="mailto:bandrade@musd.net" 
@@ -101,7 +101,7 @@ const Contact = () => {
                   <div>
                     <p className="font-semibold text-black">Sierra High School</p>
                     <p className="text-gray-600">
-                      441 Loudon Ave<br />
+                      1700 Thomas street<br />
                       Manteca, CA 95336
                     </p>
                   </div>
@@ -115,7 +115,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-black">Main Office</p>
-                    <p className="text-gray-600">(209) 858-3094</p>
+                    <p className="text-gray-600">(209) 858-7410</p>
                   </div>
                 </div>
               </div>
@@ -126,7 +126,7 @@ const Contact = () => {
               <h3 className="text-xl font-bold text-black mb-6">Connect With Us</h3>
               <div className="space-y-4">
                 <a 
-                  href="https://sierra.musd.net" 
+                  href="https://sierrahigh.mantecausd.net/activities/academic-decathlon" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg border border-gray-200 hover:scale-105 transition-all"
@@ -158,7 +158,7 @@ const Contact = () => {
                     <p className="font-semibold text-black">Practice Schedule</p>
                     <p className="text-gray-600">
                       Tuesdays & Thursdays<br />
-                      3:30 PM - 5:00 PM
+                      11:50 AM - 12:20 PM
                     </p>
                   </div>
                 </div>
@@ -171,7 +171,34 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-black">Location</p>
-                    <p className="text-gray-600">Room 203 - Mrs. Andrade's Classroom</p>
+                    <p className="text-gray-600">Room 14 - Mrs. Andrade's Classroom</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <svg className="w-6 h-6 text-black mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-black">Practice Schedule</p>
+                    <p className="text-gray-600">
+                      Fridays<br />
+                      7:20AM - 8:20AM
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0">
+                    <svg className="w-6 h-6 text-black mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-black">Location</p>
+                    <p className="text-gray-600">Library</p>
                   </div>
                 </div>
               </div>
